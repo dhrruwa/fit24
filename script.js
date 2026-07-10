@@ -25,6 +25,16 @@ if(window.gsap && !reduceMotion){
   /* ---------- header ---------- */
   gsap.from('header', {y:-40, opacity:0, duration:.7, ease:'power2.out'});
 
+  /* ---------- nav pill hover ---------- */
+  document.querySelectorAll('.nav-pills a').forEach(el=>{
+    el.addEventListener('mouseenter', ()=>{
+      gsap.to(el, {scale:1.08, backgroundColor:'#f4500c', color:'#fff', duration:.35, ease:'back.out(3)'});
+    });
+    el.addEventListener('mouseleave', ()=>{
+      gsap.to(el, {scale:1, backgroundColor:'rgba(255,255,255,.06)', color:'#e9e2dc', duration:.3, ease:'power2.out'});
+    });
+  });
+
   /* ---------- hero intro ---------- */
 
   const heroTl = gsap.timeline({defaults:{ease:'power3.out'}});

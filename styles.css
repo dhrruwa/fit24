@@ -65,7 +65,7 @@ header .wrap{padding-left:20px;padding-right:20px}
   padding:13px 28px;border-radius:999px;font-size:16px;color:#e9e2dc;
   background:rgba(255,255,255,.06);transition:.2s;
 }
-.nav-pills a:hover{background:rgba(255,255,255,.14)}
+.nav-pills a:hover{background:var(--orange);color:#fff}
 .buy-btn{
   background:#fff;color:#111;border-radius:999px;padding:15px 32px;
   font-weight:600;font-size:16.5px;transition:.2s;
