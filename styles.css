@@ -62,10 +62,10 @@ header .wrap{padding-left:20px;padding-right:20px}
 }
 .nav-pills{display:flex;gap:10px}
 .nav-pills a{
-  padding:13px 28px;border-radius:999px;font-size:16px;color:#e9e2dc;
-  background:rgba(255,255,255,.06);transition:.2s;
+  padding:12px 27px;border-radius:999px;font-size:16px;color:#e9e2dc;
+  background:transparent;border:1px solid rgba(255,255,255,.22);transition:.2s;
 }
-.nav-pills a:hover{background:var(--orange);color:#fff}
+.nav-pills a:hover{background:var(--orange);border-color:var(--orange);color:#fff}
 .buy-btn{
   background:#fff;color:#111;border-radius:999px;padding:15px 32px;
   font-weight:600;font-size:16.5px;transition:.2s;
@@ -81,7 +81,7 @@ header .wrap{padding-left:20px;padding-right:20px}
     radial-gradient(1300px 780px at 50% 0%,rgba(70,32,14,.35),transparent 70%),
     var(--bg);
 }
-.hero>header{flex:0 0 auto}
+.hero>header{flex:0 0 auto;position:static}
 .hero-body{
   flex:1 1 auto;position:relative;
   display:flex;flex-direction:column;align-items:center;
@@ -381,7 +381,7 @@ footer{padding:100px 0 0;border-top:1px solid rgba(255,255,255,.05);position:rel
     radial-gradient(1100px 600px at 50% 0%,rgba(70,32,14,.3),transparent 70%),
     var(--bg);
 }
-.page-hero>header{flex:0 0 auto}
+.page-hero>header{flex:0 0 auto;position:static}
 .page-hero-body{
   flex:1 1 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;
   position:relative;z-index:2;

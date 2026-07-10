@@ -28,10 +28,10 @@ if(window.gsap && !reduceMotion){
   /* ---------- nav pill hover ---------- */
   document.querySelectorAll('.nav-pills a').forEach(el=>{
     el.addEventListener('mouseenter', ()=>{
-      gsap.to(el, {scale:1.08, backgroundColor:'#f4500c', color:'#fff', duration:.35, ease:'back.out(3)'});
+      gsap.to(el, {scale:1.08, backgroundColor:'#f4500c', borderColor:'#f4500c', color:'#fff', duration:.35, ease:'back.out(3)'});
     });
     el.addEventListener('mouseleave', ()=>{
-      gsap.to(el, {scale:1, backgroundColor:'rgba(255,255,255,.06)', color:'#e9e2dc', duration:.3, ease:'power2.out'});
+      gsap.to(el, {scale:1, backgroundColor:'rgba(0,0,0,0)', borderColor:'rgba(255,255,255,.22)', color:'#e9e2dc', duration:.3, ease:'power2.out'});
     });
   });
 
